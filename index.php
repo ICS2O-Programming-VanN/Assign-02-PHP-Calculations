@@ -35,8 +35,8 @@
         $unit = ($_POST["unit"]); // takes user input                       
         $volume = pi() * pow($radius, 2) * $height; //calculates volume
         $bases = 2 * pi() * pow($radius, 2); //calculates both bases
-        $cSegment = 2 * pi() * $radius * $height; //calculates Cylindrical Segment
-        $surface_area = $cSegment + $bases; //calculates Surface Area
+        $lateralSegment = 2 * pi() * $radius * $height; //calculates Cylindrical Segment
+        $surface_area = $lateralSegment + $bases; //calculates Surface Area
                                    
         // Number formatting (Rounds each value to second decimal point)
         $volume = number_format($volume, 2);  
