@@ -6,11 +6,26 @@
 		<meta name="keywords" content="immaculata, ics2o">
 		<meta name="DESCRIPTION" content="website for calculating SA and Volume of a cylinder">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
     <title>My PHP website calculating the Surface Area and Volume of a cylinder</title>
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-green.min.css" />
     <!-- CSS file link -->
 		<link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <!-- Author Header -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-title">
+          <span class="mdl-layout-title">Coded by Van Nguyen</span>
+        </div>
+      </header>
 		<!-- Heading and paragraph -->
     <?php 
 			echo '<center><h1>Surface Area and Volume Program in PHP (Cylinder)</h1></center><br>';
@@ -35,16 +50,18 @@
         $unit = ($_POST["unit"]); // takes user input                       
         $volume = pi() * pow($radius, 2) * $height; //calculates volume
         $bases = 2 * pi() * pow($radius, 2); //calculates both bases
-        $lateralSegment = 2 * pi() * $radius * $height; //calculates Cylindrical Segment
+        $lateralSegment = 2 * pi() * $radius * $height; //calculates Lateral Segment
         $surface_area = $lateralSegment + $bases; //calculates Surface Area
                                    
         // Number formatting (Rounds each value to second decimal point)
         $volume = number_format($volume, 2);  
         $surface_area = number_format($surface_area, 2);   
                               
-        // Output
+        // Outputs calculations
 				echo "<br><br><h3>The volume of this cylinder is " . $volume . $unit . "³<br> The surface area of this cylinder is " . $surface_area . $unit . "²</h3>";
 			}
+      echo '<center><img src="./images/cylinder.png" alt="cylinder"></center>';
 		?>
+    </div>
   </body>
 </html>

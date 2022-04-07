@@ -16,7 +16,16 @@ p {
 	background-color: #fbf8ac;
 	font-weight: bold;
 	text-decoration: underline;
+  color: #2b006b
 }
 h3 {
   background-color: #fbf8ac;
+}
+
+.mdl-layout-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #00CC66;
+	font-weight: bold;
 }
