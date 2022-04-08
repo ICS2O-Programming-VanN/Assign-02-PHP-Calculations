@@ -22,6 +22,8 @@ h3 {
   background-color: #fbf8ac;
 }
 
+/* Centered Div */
+
 .mdl-layout-title {
 	display: flex;
 	justify-content: center;

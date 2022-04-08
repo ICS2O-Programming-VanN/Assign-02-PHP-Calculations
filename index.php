@@ -66,10 +66,12 @@
       <h5>Do you like my website?</h5>
       <!-- Radio button -->
   		<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <!-- Option 1 -->
   			<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
   			<span class="mdl-radio__label">Of course!</span>
   		</label>
   		<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <!-- Option 2 -->
   			<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
   			<span class="mdl-radio__label">It's the best!</span>
   		</label>
