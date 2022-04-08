@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <!-- Author Header -->
+    <!-- MDL Header -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout-title">
@@ -58,13 +58,13 @@
         $surface_area = number_format($surface_area, 2);   
                               
         // Outputs calculations
-				echo "<br><br><h3>The volume of this cylinder is " . $volume . $unit . "³<br> The surface area of this cylinder is " . $surface_area . $unit . "²</h3>";
+				echo "<br><br><h3>The volume of this cylinder is " . $volume . $unit . "<sup>3</sup><br> The surface area of this cylinder is " . $surface_area . $unit . "<sup>2</sup></h3>";
 			}
       echo '<center><img src="./images/cylinder.png" alt="cylinder"></center>';
 		?>
-    <!-- Radio button -->
 		<center>
       <h5>Do you like my website?</h5>
+      <!-- Radio button -->
   		<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
   			<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
   			<span class="mdl-radio__label">Of course!</span>
